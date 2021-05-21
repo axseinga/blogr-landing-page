@@ -13,8 +13,9 @@ body {
 
 .header {
   background-image: linear-gradient(to bottom, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9)), url(../images/bg-pattern-intro.svg);
-  background-position: 30% 53%;
-  height: 75vh;
+  background-position: 28% 50%;
+  height: 65vh;
+  border-bottom-left-radius: 100px;
   position: relative;
   padding: 3rem;
   color: white;
@@ -65,10 +66,32 @@ body {
   text-align: center;
   padding: 10rem 1.5rem; }
   .heading--primary {
-    font-size: 6rem; }
+    font-size: 6rem;
+    animation: moveInLeft 1s ease-out; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
   .heading--secondary {
     font-size: 2.5rem;
-    font-weight: 300; }
+    font-weight: 300;
+    animation: moveInRight 1s ease-out; }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
   .heading__btns {
     padding: 2rem; }
     .heading__btns--start {
@@ -78,8 +101,8 @@ body {
 
 .btn, .btn:link, .btn:visited {
   width: 130px;
-  background-color: transparent;
-  color: white;
+  background-color: white;
+  color: #ff525d;
   text-decoration: none;
   padding: 1rem;
   display: inline-block;
@@ -92,5 +115,5 @@ body {
   cursor: pointer; }
 
 .btn:hover {
-  background-color: white;
-  color: #ff525d; }
+  background-color: transparent;
+  color: white; }
