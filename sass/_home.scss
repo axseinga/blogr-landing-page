@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-red-light, 0.9),
+      rgba($color-red-dark, 0.9)
+    ),
+    url(../images/bg-pattern-intro.svg);
+  background-position: 30% 53%;
+  height: 75vh;
+  position: relative;
+
+  padding: 3rem;
+
+  color: $color-white;
+  font-family: $font-primary;
+}
+
+.navbar {
+  height: 50px;
+  padding: 0 8rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    &--logo {
+      font-size: 4rem;
+      font-weight: 600;
+      padding-right: 4rem;
+    }
+
+    &__links {
+      list-style: none;
+      font-size: 1.5rem;
+      font-weight: 300;
+      padding-top: 0.5rem;
+
+      display: flex;
+      justify-content: space-evenly;
+
+      &--link {
+        padding: 0 1.5rem;
+        cursor: pointer;
+
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    &--login {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $color-white;
+      text-decoration: none;
+      padding-right: 2.5rem;
+
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem 1.5rem;
+
+  &--primary {
+    font-size: 6rem;
+  }
+
+  &--secondary {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  &__btns {
+    padding: 2rem;
+
+    &--start {
+      margin-right: 0.5rem;
+    }
+
+    &--more {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+// Components //
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    width: 130px;
+    background-color: transparent;
+    color: $color-white;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 10rem;
+    position: relative;
+    font-size: 1.5rem;
+    font-family: $font-primary;
+    font-weight: 600;
+    border: 1px solid $color-white;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-pink-dark;
+  }
+}
+
+//.attribution {
+//  font-size: 11px;
+//  text-align: center;
+//}
+//.attribution a {
+//  color: hsl(228, 45%, 44%);
+//}
