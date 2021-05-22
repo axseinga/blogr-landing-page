@@ -92,7 +92,6 @@ body {
 
 .s1__intro {
   text-align: center;
-  font-size: 4rem;
   padding: 2rem; }
 
 .s1__main {
@@ -108,11 +107,39 @@ body {
     padding: 1.5rem 0 4rem 0; }
   .s1__main--p {
     padding-bottom: 4rem;
+    font-size: 2.3rem;
     color: #4b5862; }
   .s1__main--img {
     position: absolute;
     top: 120px;
     right: -335px; }
+
+.s2 {
+  height: 400px;
+  background-image: url(../images/bg-pattern-circles.svg), linear-gradient(to right, #2c2d3f, #3f4164);
+  background-repeat: no-repeat;
+  background-position: -40% 80%;
+  border-radius: 0 100px 0 100px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 3.5rem;
+  display: flex;
+  position: relative; }
+  .s2--img {
+    position: absolute;
+    top: -70px;
+    left: 100px; }
+  .s2__right {
+    align-self: center;
+    padding: 0 2rem 0 2rem;
+    max-width: 600px;
+    position: absolute;
+    right: 100px; }
+  .s2--heading {
+    font-size: 3rem;
+    padding-bottom: 2rem; }
+  .s2--p {
+    font-size: 2.3rem; }
 
 .btn, .btn:link, .btn:visited {
   width: 130px;

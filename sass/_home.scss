@@ -141,8 +141,6 @@ body {
 
 .s1__intro {
   text-align: center;
-  font-size: 4rem;
-
   padding: 2rem;
 }
 
@@ -165,6 +163,7 @@ body {
 
   &--p {
     padding-bottom: 4rem;
+    font-size: 2.3rem;
     color: $color-grey-medium;
   }
 
@@ -172,6 +171,49 @@ body {
     position: absolute;
     top: 120px;
     right: -335px;
+  }
+}
+
+.s2 {
+  height: 400px;
+  background-image: url(../images/bg-pattern-circles.svg),
+    linear-gradient(
+      to right,
+      rgba($color-grey-blue-dark, 1),
+      rgba($color-grey-blue-light, 1)
+    );
+  background-repeat: no-repeat;
+  background-position: -40% 80%;
+  border-radius: 0 100px 0 100px;
+
+  color: $color-white;
+  font-family: $font-secondary;
+  line-height: 3.5rem;
+
+  display: flex;
+  position: relative;
+
+  &--img {
+    position: absolute;
+    top: -70px;
+    left: 100px;
+  }
+
+  &__right {
+    align-self: center;
+    padding: 0 2rem 0 2rem;
+    max-width: 600px;
+    position: absolute;
+    right: 100px;
+  }
+
+  &--heading {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  &--p {
+    font-size: 2.3rem;
   }
 }
 
