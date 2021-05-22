@@ -68,36 +68,51 @@ body {
   .heading--primary {
     font-size: 6rem;
     animation: moveInLeft 1s ease-out; }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
   .heading--secondary {
     font-size: 2.5rem;
     font-weight: 300;
     animation: moveInRight 1s ease-out; }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
   .heading__btns {
     padding: 2rem; }
     .heading__btns--start {
       margin-right: 0.5rem; }
     .heading__btns--more {
       margin-left: 0.5rem; }
+
+.s1 {
+  height: 1050px;
+  font-family: "Ubuntu", sans-serif;
+  color: #1f3f5b;
+  padding: 10rem 5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: min-content;
+  position: relative; }
+
+.s1__intro {
+  text-align: center;
+  font-size: 4rem;
+  padding: 2rem; }
+
+.s1__main {
+  display: flex;
+  padding-top: 4rem; }
+  .s1__main__left {
+    max-width: 730px;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    padding: 3rem; }
+  .s1__main--heading {
+    font-size: 3rem;
+    padding: 1.5rem 0 4rem 0; }
+  .s1__main--p {
+    padding-bottom: 4rem;
+    color: #4b5862; }
+  .s1__main--img {
+    position: absolute;
+    top: 120px;
+    right: -335px; }
 
 .btn, .btn:link, .btn:visited {
   width: 130px;
@@ -117,3 +132,23 @@ body {
 .btn:hover {
   background-color: transparent;
   color: white; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }

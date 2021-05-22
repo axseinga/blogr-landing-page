@@ -103,43 +103,11 @@ body {
     animation: moveInLeft 1s ease-out;
   }
 
-  @keyframes moveInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-10rem);
-    }
-
-    80% {
-      transform: translateX(1rem);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-
   &--secondary {
     font-size: 2.5rem;
     font-weight: 300;
 
     animation: moveInRight 1s ease-out;
-
-    @keyframes moveInRight {
-      0% {
-        opacity: 0;
-        transform: translateX(10rem);
-      }
-
-      80% {
-        transform: translateX(-1rem);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translate(0);
-      }
-    }
   }
 
   &__btns {
@@ -152,6 +120,58 @@ body {
     &--more {
       margin-left: 0.5rem;
     }
+  }
+}
+
+// Section 1 //
+
+.s1 {
+  height: 1050px;
+  font-family: $font-secondary;
+  color: $color-blue-dark;
+
+  padding: 10rem 5rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  max-height: min-content;
+  position: relative;
+}
+
+.s1__intro {
+  text-align: center;
+  font-size: 4rem;
+
+  padding: 2rem;
+}
+
+.s1__main {
+  display: flex;
+
+  padding-top: 4rem;
+
+  &__left {
+    max-width: 730px;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    padding: 3rem;
+  }
+
+  &--heading {
+    font-size: 3rem;
+    padding: 1.5rem 0 4rem 0;
+  }
+
+  &--p {
+    padding-bottom: 4rem;
+    color: $color-grey-medium;
+  }
+
+  &--img {
+    position: absolute;
+    top: 120px;
+    right: -335px;
   }
 }
 
@@ -179,6 +199,40 @@ body {
   &:hover {
     background-color: transparent;
     color: $color-white;
+  }
+}
+
+///// Animations /////
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 
