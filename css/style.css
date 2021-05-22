@@ -148,8 +148,10 @@ body {
 .s3 {
   font-family: "Ubuntu", sans-serif;
   color: #1f3f5b;
+  line-height: 3.5rem;
   display: flex;
-  padding: 4rem; }
+  padding: 4rem;
+  margin-bottom: 5rem; }
   .s3__left {
     position: relative; }
   .s3--img {
@@ -159,8 +161,8 @@ body {
     max-width: 600px;
     font-size: 2.2rem;
     line-height: 3.5rem;
-    padding: 10rem 3rem 3rem 3rem;
-    margin-left: 65rem; }
+    padding: 8rem 3rem 3rem 3rem;
+    margin-left: 80rem; }
   .s3--heading {
     font-size: 3rem;
     padding: 1.5rem 0 4rem 0; }
@@ -168,6 +170,45 @@ body {
     padding-bottom: 4rem;
     font-size: 2.3rem;
     color: #4b5862; }
+
+.footer {
+  background-color: #25252d;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  border-top-right-radius: 100px; }
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+    padding: 6rem; }
+  .footer__logo {
+    width: 10rem;
+    height: 4rem; }
+  .footer__heading {
+    font-size: 2.5rem;
+    padding-bottom: 2rem; }
+  .footer__list {
+    list-style: none; }
+    .footer__list--item {
+      padding-bottom: 1.5rem; }
+
+li a {
+  color: #c8c8cb;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #3e52a3;
+  padding: 2rem; }
+
+.attribution a {
+  color: white; }
 
 .btn, .btn:link, .btn:visited {
   width: 130px;

@@ -225,9 +225,11 @@ body {
 .s3 {
   font-family: $font-secondary;
   color: $color-blue-dark;
+  line-height: 3.5rem;
 
   display: flex;
   padding: 4rem;
+  margin-bottom: 5rem;
 
   &__left {
     position: relative;
@@ -242,8 +244,8 @@ body {
     max-width: 600px;
     font-size: 2.2rem;
     line-height: 3.5rem;
-    padding: 10rem 3rem 3rem 3rem;
-    margin-left: 65rem;
+    padding: 8rem 3rem 3rem 3rem;
+    margin-left: 80rem;
   }
 
   &--heading {
@@ -256,6 +258,60 @@ body {
     font-size: 2.3rem;
     color: $color-grey-medium;
   }
+}
+
+.footer {
+  background-color: $color-grey-dark;
+  display: flex;
+  flex-direction: column;
+  color: $color-white;
+  font-family: $font-secondary;
+  font-size: 1.5rem;
+  border-top-right-radius: 100px;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 6rem;
+  }
+
+  &__logo {
+    width: 10rem;
+    height: 4rem;
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+
+    &--item {
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+li a {
+  color: $color-grey-light;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+  padding: 2rem;
+}
+.attribution a {
+  color: $color-white;
 }
 
 // Components //
@@ -318,11 +374,3 @@ body {
     transform: translate(0);
   }
 }
-
-//.attribution {
-//  font-size: 11px;
-//  text-align: center;
-//}
-//.attribution a {
-//  color: hsl(228, 45%, 44%);
-//}
