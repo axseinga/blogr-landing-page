@@ -141,6 +141,7 @@ body {
 
 .s1__intro {
   text-align: center;
+  font-size: 4rem;
   padding: 2rem;
 }
 
@@ -150,6 +151,7 @@ body {
   padding-top: 4rem;
 
   &__left {
+    min-width: min-content;
     max-width: 730px;
     font-size: 2.2rem;
     line-height: 3.5rem;
@@ -193,6 +195,8 @@ body {
   display: flex;
   position: relative;
 
+  margin-bottom: 10rem;
+
   &--img {
     position: absolute;
     top: -70px;
@@ -200,11 +204,12 @@ body {
   }
 
   &__right {
+    min-width: min-content;
     align-self: center;
     padding: 0 2rem 0 2rem;
     max-width: 600px;
     position: absolute;
-    right: 100px;
+    right: 145px;
   }
 
   &--heading {
@@ -214,6 +219,42 @@ body {
 
   &--p {
     font-size: 2.3rem;
+  }
+}
+
+.s3 {
+  font-family: $font-secondary;
+  color: $color-blue-dark;
+
+  display: flex;
+  padding: 4rem;
+
+  &__left {
+    position: relative;
+  }
+
+  &--img {
+    position: absolute;
+    left: -310px;
+  }
+
+  &__right {
+    max-width: 600px;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    padding: 10rem 3rem 3rem 3rem;
+    margin-left: 65rem;
+  }
+
+  &--heading {
+    font-size: 3rem;
+    padding: 1.5rem 0 4rem 0;
+  }
+
+  &--p {
+    padding-bottom: 4rem;
+    font-size: 2.3rem;
+    color: $color-grey-medium;
   }
 }
 

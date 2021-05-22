@@ -92,12 +92,14 @@ body {
 
 .s1__intro {
   text-align: center;
+  font-size: 4rem;
   padding: 2rem; }
 
 .s1__main {
   display: flex;
   padding-top: 4rem; }
   .s1__main__left {
+    min-width: min-content;
     max-width: 730px;
     font-size: 2.2rem;
     line-height: 3.5rem;
@@ -124,22 +126,48 @@ body {
   font-family: "Ubuntu", sans-serif;
   line-height: 3.5rem;
   display: flex;
-  position: relative; }
+  position: relative;
+  margin-bottom: 10rem; }
   .s2--img {
     position: absolute;
     top: -70px;
     left: 100px; }
   .s2__right {
+    min-width: min-content;
     align-self: center;
     padding: 0 2rem 0 2rem;
     max-width: 600px;
     position: absolute;
-    right: 100px; }
+    right: 145px; }
   .s2--heading {
     font-size: 3rem;
     padding-bottom: 2rem; }
   .s2--p {
     font-size: 2.3rem; }
+
+.s3 {
+  font-family: "Ubuntu", sans-serif;
+  color: #1f3f5b;
+  display: flex;
+  padding: 4rem; }
+  .s3__left {
+    position: relative; }
+  .s3--img {
+    position: absolute;
+    left: -310px; }
+  .s3__right {
+    max-width: 600px;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    padding: 10rem 3rem 3rem 3rem;
+    margin-left: 65rem; }
+  .s3--heading {
+    font-size: 3rem;
+    padding: 1.5rem 0 4rem 0; }
+  .s3--p {
+    padding-bottom: 4rem;
+    font-size: 2.3rem;
+    color: #4b5862; }
 
 .btn, .btn:link, .btn:visited {
   width: 130px;
