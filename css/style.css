@@ -29,23 +29,56 @@ body {
   .navbar__left {
     display: flex;
     align-items: center; }
-    .navbar__left--logo {
-      font-size: 4rem;
-      font-weight: 600;
-      padding-right: 4rem; }
-    .navbar__left__links {
-      list-style: none;
-      font-size: 1.5rem;
-      font-weight: 300;
-      padding-top: 0.5rem;
-      display: flex;
-      justify-content: space-evenly; }
-      .navbar__left__links--link {
-        padding: 0 1.5rem;
-        cursor: pointer;
+  .navbar--logo {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-right: 4rem; }
+  .navbar__menu {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly; }
+    .navbar__menu__1 {
+      position: relative;
+      display: inline-block;
+      padding: 0 2rem; }
+      .navbar__menu__1:hover .navbar__menu__1--dropcontent {
+        display: block; }
+      .navbar__menu__1--dropbtn {
         transition: all 0.2s ease-in-out; }
-        .navbar__left__links--link:hover {
+        .navbar__menu__1--dropbtn, .navbar__menu__1--dropbtn:link, .navbar__menu__1--dropbtn:visited {
+          background-color: transparent;
+          color: white;
+          text-decoration: none;
+          border: none;
+          position: relative;
+          padding-bottom: 1rem;
+          font-size: 1.5rem;
+          font-family: "Overpass", sans-serif;
+          font-weight: 600;
+          cursor: pointer; }
+        .navbar__menu__1--dropbtn:hover, .navbar__menu__1--dropbtn:active {
+          text-decoration: underline;
+          font-weight: 600;
           transform: scale(1.5); }
+      .navbar__menu__1--dropcontent {
+        display: none;
+        position: absolute;
+        padding: 1rem;
+        background-color: white;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 5px; }
+      .navbar__menu__1--link, .navbar__menu__1--link:link, .navbar__menu__1--link:visited {
+        color: #4b5862;
+        padding: 0.5rem;
+        text-decoration: none;
+        display: block;
+        cursor: pointer; }
+      .navbar__menu__1--link:hover, .navbar__menu__1--link:active {
+        font-weight: 600; }
   .navbar__right {
     display: flex;
     align-items: center; }
@@ -57,7 +90,10 @@ body {
       padding-right: 2.5rem;
       transition: all 0.2s ease-in-out; }
       .navbar__right--login:hover {
-        transform: scale(1.5); }
+        text-decoration: underline; }
+
+.show {
+  display: block; }
 
 .heading {
   display: flex;
