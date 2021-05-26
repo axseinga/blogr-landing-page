@@ -1,0 +1,450 @@
+// Header //
+
+.header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-red-light, 0.9),
+      rgba($color-red-dark, 0.9)
+    ),
+    url(../images/bg-pattern-intro.svg);
+  background-position: 28% 50%;
+  height: 65vh;
+  border-bottom-left-radius: 100px;
+  position: relative;
+
+  padding: 3rem;
+
+  color: $color-white;
+  font-family: $font-primary;
+
+  @media only screen and (max-width: $bp-large) {
+    height: 45vh;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    height: 55vh;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    height: 90vh;
+  }
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem 1.5rem;
+
+  &--primary {
+    font-size: 6rem;
+
+    animation: moveInLeft 1s ease-out;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 4rem;
+    }
+  }
+
+  &--secondary {
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    animation: moveInRight 1s ease-out;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 2rem;
+    }
+  }
+
+  &__btns {
+    padding: 2rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      padding: 2rem 0;
+    }
+
+    &--start {
+      margin-right: 0.5rem;
+    }
+
+    &--more {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+// Sections //
+
+.s1 {
+  height: 1050px;
+  font-family: $font-secondary;
+  color: $color-blue-dark;
+
+  padding: 10rem 5rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  max-height: min-content;
+  position: relative;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 6rem 2.5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    align-items: center;
+    height: min-content;
+    padding-bottom: 0;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 6rem 2rem 0 2rem;
+  }
+}
+
+.s1__intro {
+  text-align: center;
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.s1__main {
+  display: flex;
+
+  padding-top: 4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  &__left {
+    min-width: min-content;
+    max-width: 730px;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    padding: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+      max-width: 600px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 530px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      max-width: 900px;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      text-align: center;
+      padding-bottom: 0;
+    }
+  }
+
+  &--heading {
+    font-size: 3rem;
+    padding: 1.5rem 0 4rem 0;
+  }
+
+  &--p {
+    padding-bottom: 4rem;
+    font-size: 2.3rem;
+    color: $color-grey-medium;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 2rem;
+    }
+  }
+
+  &--img {
+    position: absolute;
+    top: 120px;
+    right: -335px;
+
+    @media only screen and (max-width: $bp-small) {
+      position: static;
+    }
+  }
+}
+
+.desktop {
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
+}
+
+.mobile {
+  @media only screen and (min-width: $bp-small) {
+    display: none;
+  }
+}
+
+.s2 {
+  height: 400px;
+  background-image: url(../images/bg-pattern-circles.svg),
+    linear-gradient(
+      to right,
+      rgba($color-grey-blue-dark, 1),
+      rgba($color-grey-blue-light, 1)
+    );
+  background-repeat: no-repeat;
+  background-position: -40% 80%;
+  border-radius: 0 100px 0 100px;
+
+  color: $color-white;
+  font-family: $font-secondary;
+  line-height: 3.5rem;
+
+  display: flex;
+  position: relative;
+
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 600px;
+    margin-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    height: 950px;
+  }
+
+  &--img {
+    position: absolute;
+    top: -70px;
+    left: 100px;
+
+    @media only screen and (max-width: $bp-large) {
+      left: 20px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      left: 10px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 80%;
+      width: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      height: 45%;
+    }
+  }
+
+  &__right {
+    min-width: 300px; // ?
+    align-self: center;
+    padding: 0 2rem 0 2rem;
+    max-width: 600px;
+    position: absolute;
+    right: 145px;
+
+    @media only screen and (max-width: $bp-large) {
+      right: 25px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      right: 0;
+      max-width: 550px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      max-width: 900px;
+      min-width: 700px;
+      margin-top: 32rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      min-width: 300px;
+      max-width: 500px;
+      text-align: center;
+    }
+  }
+
+  &--heading {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  &--p {
+    font-size: 2.3rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.s3 {
+  font-family: $font-secondary;
+  color: $color-blue-dark;
+  line-height: 3.5rem;
+
+  display: flex;
+  padding: 4rem;
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  &--img {
+    position: absolute;
+    left: -310px;
+
+    @media only screen and (max-width: $bp-small) {
+      position: static;
+    }
+  }
+
+  &__right {
+    max-width: 600px;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    padding: 8rem 3rem 3rem 3rem;
+    margin-left: 70rem;
+
+    @media only screen and (max-width: $bp-large) {
+      margin-left: 60rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 58rem;
+      max-width: 650px;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 0;
+      max-width: 900px;
+      padding-top: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      text-align: center;
+    }
+  }
+
+  &--heading {
+    font-size: 3rem;
+    padding: 1.5rem 0 4rem 0;
+  }
+
+  &--p {
+    padding-bottom: 4rem;
+    font-size: 2.3rem;
+    color: $color-grey-medium;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 2rem;
+    }
+  }
+}
+
+// Footer //
+
+.footer {
+  background-color: $color-grey-dark;
+  display: flex;
+  flex-direction: column;
+  color: $color-white;
+  font-family: $font-secondary;
+  font-size: 1.5rem;
+  border-top-right-radius: 100px;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 6rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    width: 10rem;
+    height: 4rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+      font-size: 2rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    &--item {
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+li a {
+  color: $color-grey-light;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+// Frontend Mentor //
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+  padding: 2rem;
+}
+.attribution a {
+  color: $color-white;
+}
