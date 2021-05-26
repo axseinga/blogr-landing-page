@@ -415,7 +415,8 @@ body {
       .s2__right {
         min-width: 300px;
         max-width: 500px;
-        text-align: center; } }
+        text-align: center;
+        margin-top: 24rem; } }
   .s2--heading {
     font-size: 3rem;
     padding-bottom: 2rem; }
