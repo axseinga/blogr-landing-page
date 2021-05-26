@@ -13,6 +13,25 @@ body {
   box-sizing: border-box;
   overflow-x: hidden; }
 
+.btn, .btn:link, .btn:visited {
+  width: 130px;
+  background-color: white;
+  color: #ff525d;
+  text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 10rem;
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  border: 1px solid white;
+  cursor: pointer; }
+
+.btn:hover {
+  background-color: transparent;
+  color: white; }
+
 .header {
   background-image: linear-gradient(to bottom, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9)), url(../images/bg-pattern-intro.svg);
   background-position: 28% 50%;
@@ -102,6 +121,113 @@ body {
       transition: all 0.2s ease-in-out; }
       .navbar__right--login:hover {
         text-decoration: underline; }
+
+.navbar__mobile {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0 2rem 0;
+  position: relative; }
+  .navbar__mobile--ham, .navbar__mobile--ham:link, .navbar__mobile--ham:visited {
+    background-color: transparent;
+    border-radius: 10rem;
+    border: none;
+    cursor: pointer; }
+
+.mobile-menu {
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  width: 90vw;
+  height: min-content;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  border-radius: 8px;
+  margin-top: 4rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mobile-menu--up {
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .mobile-menu--hr {
+    width: 80%;
+    border: 1px solid #ededed; }
+  .mobile-menu--down {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .mobile-menu__btn, .mobile-menu__btn:link, .mobile-menu__btn:visited {
+    background-color: transparent;
+    color: #1f3f5b;
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: all 2s ease-in-out; }
+  .mobile-menu__btn:hover .mobile-menu__btn--p {
+    color: #4b5862; }
+  .mobile-menu__btn--p {
+    margin-right: 1rem; }
+  .mobile-menu__btn--arrow {
+    align-self: center; }
+  .mobile-menu__dropcontent {
+    background-color: #ededed;
+    border-radius: 8px;
+    width: 80%;
+    height: min-content;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem; }
+    .mobile-menu__dropcontent--link, .mobile-menu__dropcontent--link:link, .mobile-menu__dropcontent--link:visited {
+      color: #3f4164;
+      text-decoration: none;
+      padding: 1rem;
+      font-size: 2rem;
+      font-family: "Overpass", sans-serif;
+      font-weight: 600;
+      border: none;
+      cursor: pointer; }
+    .mobile-menu__dropcontent--link:hover {
+      text-decoration: underline;
+      color: #25252d; }
+  .mobile-menu--login {
+    color: #1f3f5b;
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    cursor: pointer; }
+  .mobile-menu--signup, .mobile-menu--signup:link, .mobile-menu--signup:visited {
+    width: 160px;
+    background-image: linear-gradient(to bottom, rgba(255, 143, 112, 0.9), rgba(255, 61, 84, 0.9));
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+  .mobile-menu--signup:hover:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+
+.rotate {
+  transform: rotate(180deg); }
+
+.bold {
+  color: #4b5862; }
+
+.hidden {
+  display: none; }
 
 .show {
   display: block; }
@@ -403,25 +529,6 @@ a:hover {
   padding: 2rem; }
 
 .attribution a {
-  color: white; }
-
-.btn, .btn:link, .btn:visited {
-  width: 130px;
-  background-color: white;
-  color: #ff525d;
-  text-decoration: none;
-  padding: 1rem;
-  display: inline-block;
-  border-radius: 10rem;
-  position: relative;
-  font-size: 1.5rem;
-  font-family: "Overpass", sans-serif;
-  font-weight: 600;
-  border: 1px solid white;
-  cursor: pointer; }
-
-.btn:hover {
-  background-color: transparent;
   color: white; }
 
 @keyframes moveInLeft {
