@@ -44,9 +44,12 @@ body {
   @media only screen and (max-width: 84.75rem) {
     .header {
       height: 45vh; } }
+  @media only screen and (max-width: 84.75rem) {
+    .header {
+      height: 55vh; } }
   @media only screen and (max-width: 43.75rem) {
     .header {
-      height: 80vh; } }
+      height: 90vh; } }
 
 .navbar {
   height: 50px;
@@ -89,9 +92,10 @@ body {
           font-weight: 600;
           cursor: pointer; }
         .navbar__menu__1--dropbtn:hover, .navbar__menu__1--dropbtn:active {
-          text-decoration: underline;
-          font-weight: 600;
-          transform: scale(1.5); }
+          font-style: bold;
+          font-weight: 600; }
+        .navbar__menu__1--dropbtn:hover .navbar--icon {
+          transform: rotate(180deg); }
       .navbar__menu__1--dropcontent {
         display: none;
         position: absolute;
@@ -109,6 +113,8 @@ body {
         cursor: pointer; }
       .navbar__menu__1--link:hover, .navbar__menu__1--link:active {
         font-weight: 600; }
+  .navbar--span {
+    padding-right: 0.5rem; }
   .navbar__right {
     display: flex;
     align-items: center; }

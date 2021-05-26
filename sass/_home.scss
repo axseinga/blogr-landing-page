@@ -67,8 +67,12 @@ body {
     height: 45vh;
   }
 
+  @media only screen and (max-width: $bp-large) {
+    height: 55vh;
+  }
+
   @media only screen and (max-width: $bp-mobile) {
-    height: 80vh;
+    height: 90vh;
   }
 }
 
@@ -131,9 +135,12 @@ body {
 
         &:hover,
         &:active {
-          text-decoration: underline;
+          font-style: bold;
           font-weight: 600;
-          transform: scale(1.5);
+        }
+
+        &:hover .navbar--icon {
+          transform: rotate(180deg);
         }
       }
 
@@ -165,6 +172,10 @@ body {
         }
       }
     }
+  }
+
+  &--span {
+    padding-right: 0.5rem;
   }
 
   &__right {
